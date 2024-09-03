@@ -10,6 +10,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/camera follow.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -91,7 +94,9 @@
       <workItem from="1724777720962" duration="18000" />
       <workItem from="1724777754058" duration="74000" />
       <workItem from="1724777846401" duration="1531000" />
-      <workItem from="1725300508268" duration="37000" />
+      <workItem from="1725300508267" duration="4219000" />
+      <workItem from="1725381153468" duration="81000" />
+      <workItem from="1725381712291" duration="2578000" />
     </task>
     <servers />
   </component>
