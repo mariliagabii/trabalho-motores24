@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class player : MonoBehaviour
 {
     public int velocidade = 10;
+    public int forcaPulo = 7;
+    private bool noChao;
     private Rigidbody rb;
     
     // Start is called before the first frame update
@@ -13,6 +16,14 @@ public class player : MonoBehaviour
     {
       Debug.Log("START");
       TryGetComponent(out rb);
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if ( !noChao && other.gameObject.tag == "chao")
+        {
+            noChao = true;
+        }
     }
 
     // Update is called once per frame
@@ -25,6 +36,15 @@ public class player : MonoBehaviour
         
         UnityEngine.Vector3 direcao = new Vector3(h, 0, v);
         rb.AddForce(direcao * velocidade * Time.deltaTime,ForceMode.Impulse);
+
+        if (Input.GetKeyDown(KeyCode.Space) && noChao)
+        {
+            rb.AddForce(Vector3.up * forcaPulo, ForceMode.Impulse);
+            noChao = false;
+        }
+        
+        
+        
 
         if (transform.position.y <= -10)
         {
