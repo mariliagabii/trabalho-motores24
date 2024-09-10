@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class player : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public int velocidade = 10;
+    public int velocidade = 7;
     public int forcaPulo = 7;
     private bool noChao;
     private Rigidbody rb;
