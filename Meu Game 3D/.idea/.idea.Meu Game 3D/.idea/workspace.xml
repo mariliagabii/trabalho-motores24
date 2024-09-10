@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/scripts/camera follow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.10/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -98,6 +99,8 @@
       <workItem from="1725381153468" duration="81000" />
       <workItem from="1725381712291" duration="2653000" />
       <workItem from="1725909031354" duration="3208000" />
+      <workItem from="1725990343924" duration="143000" />
+      <workItem from="1725992180209" duration="768000" />
     </task>
     <servers />
   </component>
